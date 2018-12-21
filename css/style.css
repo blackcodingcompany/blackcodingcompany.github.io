@@ -12,7 +12,7 @@ body, html{
 
 body{
 	background-color: #f6f6f6;
-	height: 2000px;
+	/*height: 2000px;*/
 }
 
 a{
@@ -230,31 +230,70 @@ nav>a{
 }
 
 #mainContent{
-	/*background-color: #456745;
-	width: 450px;
-	height: 450px;*/
 	margin: 250px auto 0 auto;
 	text-align: center;
 }
 
-#mainContent>span{
+#mainContent>div#start{
+	padding-bottom: 250px;
+}
+
+/* панель ригистрации */
+
+#mainContent>div#reg_panel>div#TitleReg>span{
 	font-family: 'Lobster', sans-serif;
-	font-size: 1.8em;
+	font-size: 2em;
 	color: #323232;
 }
 
-#mainContent>input{
+#mainContent>div#reg_panel>span{
+	font-family: 'Lobster', sans-serif;
+	font-size: 1.8em;
+	color: #323232;
+	padding-left: 10px;
+}
+
+#mainContent>div#reg_panel>input{
 	background-color: #323232;
-	/*margin: 250px auto 0 auto;*/
-	/*margin-left: 100px;*/
 	font-family: 'Lobster', sans-serif;
 	color: white;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	border-radius: 10px;
 	margin-top: 15px;
 	text-align: center;
 	border:none;
 }
+
+#mainContent>div#reg_panel>a:hover>div#btn{
+	border-bottom: 3px solid rgba(217, 91,72, 1);
+	margin-top: 11px;
+}
+
+#mainContent>div#reg_panel>a:active>div#btn{
+	border-bottom: 0px solid rgba(217, 91,72, 1);
+	margin-top: 14px;
+}
+
+#mainContent>div#reg_panel>a>div#btn {
+	margin-right: 43%;
+	margin-left: 43%;
+	margin-top:  10px;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 9px;
+	font.size: 1.2em;
+	background-color: rgba(236, 101, 80, 1);
+	font-family: 'Lobster', sans-serif;
+	text-shadow: #454545 0 0 2px;
+	border-bottom: 4px solid rgba(217, 91,72, 1);
+}
+
+#mainContent>div#reg_panel>i{
+	color: #323232;
+	font-size: 1.6em;
+}
+
+/* uhuhdsfuhsudf */
 
 #mainContent>div#start>div#title>span{
 	font-family: 'Lobster', sans-serif;

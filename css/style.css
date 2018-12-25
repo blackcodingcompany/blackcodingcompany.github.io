@@ -281,7 +281,7 @@ nav>a{
 	border-radius: 5px;
 	color: white;
 	padding: 5px 9px;
-	font.size: 1.2em;
+	font-size: 1.2em;
 	background-color: rgba(236, 101, 80, 1);
 	font-family: 'Lobster', sans-serif;
 	text-shadow: #454545 0 0 2px;
@@ -294,6 +294,30 @@ nav>a{
 }
 
 /* uhuhdsfuhsudf */
+
+#mainContent>div#reg_panel>a:hover>div#btnLogin{
+	border-bottom: 3px solid rgba(217, 91,72, 1);
+	margin-top: 11px;
+}
+
+#mainContent>div#reg_panel>a:active>div#btnLogin{
+	border-bottom: 0px solid rgba(217, 91,72, 1);
+	margin-top: 14px;
+}
+
+#mainContent>div#reg_panel>a>div#btnLogin {
+	margin-right: 43%;
+	margin-left: 43%;
+	margin-top:  10px;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 9px;
+	font-size: 1.2em;
+	background-color: rgba(236, 101, 80, 1);
+	font-family: 'Lobster', sans-serif;
+	text-shadow: #454545 0 0 2px;
+	border-bottom: 4px solid rgba(217, 91,72, 1);
+}
 
 #mainContent>div#start>div#title>span{
 	font-family: 'Lobster', sans-serif;
@@ -312,6 +336,23 @@ nav>a{
 	width: 150px;
 	height: 150px;
 	padding-bottom: 30px;
+}
+
+#mainContent>div#files_panel>span{
+	font-family: 'Lobster', sans-serif;
+	color: #323232;
+	font-size: 1.5em;
+}
+
+#mainContent>div#files_panel>textarea{
+	background-color: #323232;
+	font-size: 1.5em;
+	font-family: 'Lobster', sans-serif;
+	color: white;
+	width: 1000px;
+	height: 400px;
+	border-color: white;
+	border-radius: 5px;
 }
 
 div#content>div#mainContent>div#button>a{

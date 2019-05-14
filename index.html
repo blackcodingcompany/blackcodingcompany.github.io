@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>BlackCoding</title>
+	<title>BlackCoding - сообщество программистов</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
 	<meta name="description" content="На этом сайте вы сможете найти ответы на вопросы, новости в сфере it, научиться программирования, загрузить наши игры или программы">
 	<meta name="keywords" content="BlackCoding, it, курсы, уроки, новости, игры, программы">
@@ -15,94 +15,69 @@
 		<div id="content">
 			<header>
 				<div id="logo">
-					<a href="index.html" title="На главную">
-						<span>BlackCoding</span>
-					</a>
+					<a href="index.html" title="На главную"> <span>BlackCoding</span> </a>
 				</div>
+
 				<div id="about">
 					<a href="" title="Узнать детальнее об рекламе">Реклама</a>
 					<a href="" title="Написать нам письмо">Обратная связь</a>
 				</div>
+
 				<div id="reg_auth">
-					<a href="login.html" title="Войти в кабинет пользователя">
-						<div id="btn">
-							Войти
-						</div>
-					</a>
-					<a href="register.html" title="Зарегистрироваться на сайте">
-						<div id="btn">
-							Регистрация
-						</div>
-					</a>
+					<a href="login.html" title="Войти в кабинет пользователя"> <div id="btn"> Войти </div> </a>
+					<a href="register.html" title="Зарегистрироваться на сайте"> <div id="btn"> Регистрация </div> </a>
 				</div>
 			</header>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			<script>
+				function slowScroll(id){
+					$('html, body').animate({
+						scrollTop: $(id).offset().top
+					} , 500);
+				}
+			</script>
+			
 			<nav>
 				<a href="">IT новости</a>
-				<a href="">Видеокурсы</a>
-				<a href="">Сайты на заказ</a>
-				<a href="">Форум</a>
+				<a href="https://www.youtube.com/channel/UCF5CT8mCQMHPwXJKab35LxQ" target="_blank">Видеокурсы и уроки</a>
 				<a href="">Магазин</a>
-				<div id="search">
-					<span>Поиск</span>
-					<i class="fas fa-search"></i>
-				</div>
+				<a href="">Форум</a>
+				<div id="search"> <span>Поиск</span> <i class="fas fa-search"></i> </div>
 			</nav>
-			<div id="mainContent">
+
+			<div id="main">			
+				<img src="img/mainIndexImage.png" id="img_right">			
 				<div id="start">
-					<div id="title">
-					    <span>Информация</span>
-				    </div>
-				    <span>Добро пожаловать на наш сайт друг. Здесь вы можете научиться программирования, найти информацию на вопросы</span>
-				    <br>
+					<div id="title"> <span>Информация</span> </div>
+				    <span>Добро пожаловать на наш сайт друг. Здесь вы можете научиться программирования, найти информацию на вопросы</span><br>
 				    <span>и загрузить наши замечательные приложения для компьютера.
-					Наша маленькая компания предложит лучшие услуги </span>
-					<br>
-					<span>включая различные подарки в виде бонусов, за которые вы сможете приобрести подписку или заказать другие услуги.</span>
-				    <br>
-				    <span>Вот какие вы сможете языки программирования изучить бесплатно:</span>
-				    <br>
-				    <a href="learnhtml.html" title="Перейти к изучению">
-				    	<img src="img/html.png">
-				    </a>
-				    <a href="learnjs.html" title="Перейти к изучению">
-				    	<img src="img/js.png">
-					</a>
-					<a href="learncss.html" title="Перейти к изучению">
-				    	<img src="img/css.png">
-				    </a>
-				    <a href="learnjava.html" title="Перейти к изучению">
-				    	<img src="img/java.png">
-				    </a>
-				    <br>
-				    <div id="title">
-					    <span>Услуги</span>
-				    </div>
-				    <br>
-				    <span>Вы можете заказать подписку на наш сайт, посмотреть наши замечательные бесплатные уроки, пройти</span>
-				    <br>
-				    <span>тесты и заказать хостинг для вашего сайта.</span>
+					Наша маленькая компания предложит лучшие услуги </span><br>
+					<span>включая различные подарки в виде бонусов, за которые вы сможете приобрести подписку или заказать другие услуги.</span><br>
+				    <span>Вы сможете изучить различные языки программирования бесплатно. Также,недавно мы начали продавать платы</span><br>
+				    <span>расширения и комплектации для Arduino,это ты сможешь найти в розделе Магазин</span>
 				</div>
 			</div>
 		</div>
+
+
 		<footer>
-			<div id="site_name">
-				<span>BlackCoding</span> - сообщество программистов!
-			</div>
+			<div id="site_name"> <span>BlackCoding</span> - сообщество программистов! </div>
+
 			<div id="clear"></div>
+
 			<div id="footer_menu">
 				<a href="" title="Узнать детальнее об рекламе">Реклама</a>
 				<a href="" title="Поддержать проект">Поддержать проект</a>
 				<a href="" title="Написать письмо">Обратная связь</a>
 			</div>
-			<div id="rights">
-				<a href="">Все права защищены &copy; <?=date ('Y')?></a>
-			</div>
+
+			<div id="rights" onclick="slowScroll('#content')"> <a href="#">Все права защищены &copy; 2019</a> </div> <br>
+
 			<div id="social">
 				<a href="https://www.youtube.com/channel/UCF5CT8mCQMHPwXJKab35LxQ" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
 				<a href="https://plus.google.com/104228479619688160940" title="Google plus" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-				<a href="" title="VK" target="_blank"><i class="fab fa-vk"></i></a>
-				<a href="" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-				<a href="" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/vlad.private.ischuck/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
 			</div>
 		</footer>
 	</div>
